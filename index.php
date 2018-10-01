@@ -2,7 +2,7 @@
 	echo "Sa sattusid .php veebikale!";
 	$name = "Dominik";
 	$surname = "Sklyarov";
-	$dirToRead = "../../../rinde/public_html/veebiprogrammeerimine2018s/pics";
+	$dirToRead = "../../../../~rinde/veebiprogrammeerimine2018s/pics/";
 	$allFiles = array_slice(scandir($dirToRead), 2);
 	var_dump($_POST);
 
@@ -13,6 +13,8 @@
 	if (isset($_POST["sName"])) {
 		$surname = $_POST["sName"];
 	}
+
+
 ?>
 
 <!DOCTYPE html>
